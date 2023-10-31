@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.project3.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <argument
+            android:name="correctAnswers"
+            app:argType="string"/>
+        <argument
+            android:name="numOfQuestions"
+            app:argType="string"/>
+        <argument
+            android:name="operation"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_welcomeFragment_to_questionsFragment"
+            app:destination="@id/questionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionsFragment"
+        android:name="com.example.project3.QuestionsFragment"
+        android:label="fragment_questions"
+        tools:layout="@layout/fragment_questions" >
+        <argument
+            android:name="numOfQuestions"
+            app:argType="string"/>
+        <argument
+            android:name="difficulty"
+            app:argType="string"/>
+        <argument
+            android:name="operation"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_questionsFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+
+    </fragment>
+</navigation>
