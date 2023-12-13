@@ -1,4 +1,4 @@
-# Project_3
+# Project_4
 Description of the project ...
 * This project is an app designed to help teach children math. The user may choose a type of question, difficulty, and how many questions to answer and the app will give them problems to solve and let them know if their answers are correct.
 
@@ -14,10 +14,6 @@ The following **required** functionality is completed:
 
 The following **extensions** are implemented:
 * N/A
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
 
 
 ## Notes
